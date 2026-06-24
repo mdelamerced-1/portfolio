@@ -108,6 +108,11 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: box-shadow .35s ease;
+}
+
+.hero__avatar:hover {
+  box-shadow: 0 0 45px 8px rgba(255,255,255,.32);
 }
 
 .hero__avatar svg {
@@ -129,6 +134,12 @@ body {
   font-weight: 700;
   letter-spacing: -.01em;
   margin-bottom: .35rem;
+  transition: text-shadow .35s ease;
+  cursor: default;
+}
+
+.hero__name:hover {
+  text-shadow: 0 0 35px rgba(255,255,255,.42);
 }
 
 .hero__title {
@@ -136,6 +147,12 @@ body {
   font-weight: 400;
   color: rgba(255,255,255,.72);
   margin-bottom: 1.25rem;
+  transition: text-shadow .35s ease;
+  cursor: default;
+}
+
+.hero__title:hover {
+  text-shadow: 0 0 40px rgba(255,255,255,.58);
 }
 
 .hero__bio {
@@ -144,6 +161,12 @@ body {
   color: rgba(255,255,255,.8);
   font-size: .97rem;
   line-height: 1.7;
+  transition: text-shadow .35s ease;
+  cursor: default;
+}
+
+.hero__bio:hover {
+  text-shadow: 0 0 35px rgba(255,255,255,.48);
 }
 
 .hero__meta {
@@ -159,10 +182,23 @@ body {
   color: rgba(255,255,255,.88);
   text-decoration: none;
   border-bottom: 1px solid rgba(255,255,255,.35);
-  transition: color .18s;
+  transition: color .18s, text-shadow .35s ease;
 }
 
-.hero__meta a:hover { color: #fff; }
+.hero__meta a:hover {
+  color: #fff;
+  text-shadow: 0 0 30px rgba(255,255,255,.75);
+}
+
+.hero__meta span {
+  transition: text-shadow .35s ease;
+  cursor: default;
+}
+
+.hero__meta span:hover {
+  text-shadow: 0 0 30px rgba(255,255,255,.75);
+}
+
 
 /* ── Section wrapper ── */
 .projects {
