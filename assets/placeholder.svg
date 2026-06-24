@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <rect width="800" height="400" fill="#e8ecf0"/>
+  <!-- Bar chart bars -->
+  <rect x="100" y="260" width="60" height="100" fill="#b0bec5" rx="3"/>
+  <rect x="190" y="200" width="60" height="160" fill="#90a4ae" rx="3"/>
+  <rect x="280" y="150" width="60" height="210" fill="#78909c" rx="3"/>
+  <rect x="370" y="180" width="60" height="180" fill="#90a4ae" rx="3"/>
+  <rect x="460" y="120" width="60" height="240" fill="#607d8b" rx="3"/>
+  <rect x="550" y="160" width="60" height="200" fill="##78909c" rx="3"/>
+  <rect x="640" y="100" width="60" height="260" fill="#546e7a" rx="3"/>
+  <!-- Baseline -->
+  <line x1="80" y1="360" x2="720" y2="360" stroke="#9eaab4" stroke-width="2"/>
+  <!-- Label -->
+  <text x="400" y="395" text-anchor="middle" font-family="-apple-system, Segoe UI, sans-serif" font-size="14" fill="#78909c">Visual placeholder — chart or figure will appear here</text>
+</svg>

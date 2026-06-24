@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Michael Dela Merced</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="#" class="navbar__brand">Michael Dela Merced</a>
+      <nav aria-label="Primary">
+        <ul class="navbar__nav">
+          <li><a href="#project-1">Project 1</a></li>
+          <li><a href="#project-2">Project 2</a></li>
+          <li><a href="#project-3">Project 3</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero" aria-labelledby="hero-name">
+    <div class="hero__avatar">
+      <img src="assets/id_photo.jpg" alt="Michael Dela Merced" />
+    </div>
+    <h1 class="hero__name" id="hero-name">Michael Dela Merced</h1>
+    <p class="hero__title">Turning Data Into Decisions | Business &amp; Data Analyst</p>
+    <p class="hero__bio">
+      Graduate of Industrial Engineering (Minor in Information Technology) from De La Salle University, with rigorous training in systems thinking, problem-solving, and process excellence. Passionate about data, technology, and analytics.
+    </p>
+    <div class="hero__meta">
+      <span>📍 Taguig City, NCR</span>
+      <a href="mailto:michael.delamerced1@gmail.com">michael.delamerced1@gmail.com</a>
+      <a href="https://www.linkedin.com/in/michael-delamerced/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mdelamerced-1" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </section>
+
+  <!-- ── Projects ── -->
+  <main class="projects" aria-label="Portfolio projects">
+
+    <div class="section-heading">
+      <h2>Projects</h2>
+    </div>
+
+    <!-- Project 1 -->
+    <a class="card" id="project-1" href="projects/project-1.html" aria-labelledby="proj1-title">
+      <div class="card__body">
+        <p class="card__number">Project 01</p>
+        <h3 class="card__title" id="proj1-title">What Makes Users Trust — and Keep Using — AI Chatbots?</h3>
+        <p class="card__subtitle">Multidimensional Trust Framework for LLMs — Undergraduate Thesis, De La Salle University</p>
+        <p class="card__desc">Built an R + Python data pipeline for a 30-day longitudinal study of 300+ participants, processing hundreds of thousands of raw data points into an analysis-ready dataset. Applied CB-SEM and statistical analysis to quantify what drives AI adoption, then translated the results into A/B-tested product design recommendations.</p>
+
+        <div class="card__visual" aria-label="Project 1 banner">
+          <img src="assets/project1_banner.svg" alt="Project 1 banner" style="opacity:1;" />
+        </div>
+
+        <div class="card__tags" aria-label="Technologies used">
+          <span class="tag">Python</span>
+          <span class="tag">R</span>
+          <span class="tag">CB-SEM</span>
+          <span class="tag">Data Pipeline</span>
+          <span class="tag">Statistical Modeling</span>
+          <span class="tag">A/B Testing</span>
+        </div>
+        <span class="card__cta">View full project</span>
+      </div>
+    </a>
+
+    <!-- Project 2 -->
+    <a class="card" id="project-2" href="projects/project-2.html" aria-labelledby="proj2-title">
+      <div class="card__body">
+        <p class="card__number">Project 02</p>
+        <h3 class="card__title" id="proj2-title">Building an ERP System to Connect a Manufacturer's Core Operations</h3>
+        <p class="card__subtitle">End-to-End ERP Application — Systems Design Course, De La Salle University</p>
+        <p class="card__desc">Designed and built an ERP application for a local electrical-equipment manufacturer, implementing its Order-to-Cash, Procure-to-Pay, and Plan-to-Stock workflows end to end. Mapped how data moves between modules, then replaced manual, error-prone steps with automated input forms, calculations, and reporting — improving traceability and audit readiness across the business.</p>
+
+        <div class="card__visual" aria-label="Project 2 demo">
+          <video src="assets/project2_banner.mp4" autoplay muted loop playsinline aria-label="Project 2 demo"></video>
+        </div>
+
+        <div class="card__tags" aria-label="Technologies used">
+          <span class="tag">Excel</span>
+          <span class="tag">VBA</span>
+          <span class="tag">Database Management</span>
+          <span class="tag">Business Process Modeling</span>
+          <span class="tag">Requirements Analysis</span>
+          <span class="tag">ERP Implementation</span>
+        </div>
+        <span class="card__cta">View full project</span>
+      </div>
+    </a>
+
+    <!-- Project 3 -->
+    <a class="card" id="project-3" href="projects/project-3.html" aria-labelledby="proj3-title">
+      <div class="card__body">
+        <p class="card__number">Project 03</p>
+        <h3 class="card__title" id="proj3-title">Cutting Procurement Lead Time With Process Analysis &amp; Simulation</h3>
+        <p class="card__subtitle">Undergraduate Capstone — Schneider Electric × De La Salle University</p>
+        <p class="card__desc">A 7-month collaboration between our university engineering team and Schneider Electric Philippines to optimize the company's end-of-life component procurement process. Ran a gap analysis mapping workflows and KPIs to expose bottlenecks, then used systems modeling and Monte Carlo simulation to validate process changes projected to cut procurement lead time by 22.91% and save roughly Php 4M annually.</p>
+
+        <div class="card__visual" aria-label="Project 3 banner">
+          <img src="assets/project3_banner.svg" alt="Project 3 banner" style="opacity:1;" />
+        </div>
+
+        <div class="card__tags" aria-label="Skills used">
+          <span class="tag">Gap Analysis</span>
+          <span class="tag">Business Process Modeling</span>
+          <span class="tag">Simulation Modeling</span>
+          <span class="tag">Statistical Analysis</span>
+          <span class="tag">KPI Analysis</span>
+          <span class="tag">Excel</span>
+        </div>
+        <span class="card__cta">View full project</span>
+      </div>
+    </a>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/michael-delamerced/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mdelamerced-1" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:michael.delamerced1@gmail.com">michael.delamerced1@gmail.com</a>
+    </div>
+    <p>&copy; 2026 Michael Dela Merced. All rights reserved.</p>
+  </footer>
+
+  <script>
+    (function () {
+      const cards    = Array.from(document.querySelectorAll('.card[id]'));
+      const navLinks = Array.from(document.querySelectorAll('.navbar__nav a'));
+      const NAVBAR_H = 80; // navbar height + small buffer
+
+      function setActive() {
+        const mid = window.innerHeight / 2;
+        let closest = '';
+        let minDist = Infinity;
+
+        cards.forEach(function (card) {
+          const rect        = card.getBoundingClientRect();
+          const visiblePx   = Math.min(rect.bottom, window.innerHeight) - Math.max(rect.top, 0);
+          const visibleRatio = visiblePx / rect.height;
+
+          // Only eligible if at least half the card is on screen.
+          if (visibleRatio < 0.5) return;
+
+          const center = rect.top + rect.height / 2;
+          const dist   = Math.abs(center - mid);
+          if (dist < minDist) {
+            minDist = dist;
+            closest = card.id;
+          }
+        });
+
+        navLinks.forEach(function (link) {
+          link.classList.toggle('is-active', link.getAttribute('href') === '#' + closest);
+        });
+      }
+
+      window.addEventListener('scroll', setActive, { passive: true });
+      setActive(); // run once on load
+    })();
+  </script>
+</body>
+</html>

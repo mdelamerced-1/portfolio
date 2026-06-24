@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 01 — Beyond a Singular Dimension: A Multidimensional Trust Framework for Understanding User Intention and Usage of Large Language Models</title>
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/project.css" />
+</head>
+<body>
+
+  <!-- ── Navbar ── -->
+  <header class="navbar" role="banner">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__brand">Michael Dela Merced</a>
+      <nav aria-label="Primary">
+        <ul class="navbar__nav">
+          <li><a href="../index.html#project-1">← Back to Portfolio</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Project header ── -->
+  <div class="proj-hero">
+    <div class="proj-hero__inner">
+      <a href="../index.html#project-1" class="proj-back">← Back to portfolio</a>
+      <p class="proj-hero__number">Project 01</p>
+      <h1 class="proj-hero__title">Beyond a Singular Dimension: A Multidimensional Trust Framework for Understanding User Intention and Usage of Large Language Models (Undergraduate Thesis)</h1>
+      <div class="card__tags" style="margin-top:1rem;">
+        <span class="tag">Python</span>
+        <span class="tag">R</span>
+        <span class="tag">CB-SEM</span>
+        <span class="tag">Data Pipeline</span>
+        <span class="tag">Statistical Modeling</span>
+        <span class="tag">A/B Testing</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ── Main content ── -->
+  <main class="proj-main">
+
+    <!-- Overview -->
+    <section class="proj-section" aria-labelledby="s-abstract">
+      <h2 class="proj-section__heading" id="s-abstract">Overview</h2>
+      <p>People use AI tools like ChatGPT, Claude, and Gemini even when they don't fully trust them — a contradiction that most existing research can't explain. This study asked: <em>which specific types of trust actually drive whether someone starts using an AI tool, and whether they keep using it?</em> Answering it meant turning a <strong>30-day longitudinal study of 300+ participants</strong> — hundreds of thousands of raw data points — into an analysis-ready dataset, then using structural equation modeling to isolate six distinct trust dimensions and measure each one's effect on user behavior. A follow-up phase translated those statistical findings into concrete UI design recommendations and validated them with a controlled A/B test — proving the right interface changes can measurably increase user trust.</p>
+    </section>
+
+    <!-- My Role -->
+    <section class="proj-section" aria-labelledby="s-role">
+      <h2 class="proj-section__heading" id="s-role">My Role</h2>
+      <p>This was a four-person undergraduate thesis. I served as the team's data and statistics lead — I owned the analytical pipeline end to end, from raw data collection through to the modeling that produced the study's core findings.</p>
+      <ul class="proj-list">
+        <li><strong>Data pipeline &amp; analysis:</strong> Designed and built a Python- and R-based data pipeline for the 30-day longitudinal study, managing end-to-end data collection, validation, and transformation for 300+ subjects across multiple research waves — turning hundreds of thousands of raw data points into a clean, analysis-ready dataset.</li>
+        <li><strong>Statistical modeling:</strong> Applied Covariance-Based Structural Equation Modeling (CB-SEM) to quantify the drivers of AI adoption across latent trust constructs, delivering statistically validated model outputs from a complex, multidimensional dataset.</li>
+        <li><strong>From analysis to product:</strong> Translated the quantitative findings into actionable product design recommendations and validated them through structured A/B testing — bridging advanced statistical modeling with practical product improvement.</li>
+      </ul>
+    </section>
+
+    <!-- The Problem -->
+    <section class="proj-section" aria-labelledby="s-problem">
+      <h2 class="proj-section__heading" id="s-problem">The Problem</h2>
+      <p>Organizations investing in AI tools — from customer-facing chatbots to internal productivity assistants — face a recurring challenge: users are skeptical, adoption is uneven, and engagement often drops off. The standard explanation ("users don't trust AI") is too vague to act on. <em>Which kind</em> of trust is missing? Does building trust early guarantee long-term use? Can a product team actually influence trust through design?</p>
+      <p style="margin-top:1rem;">This study was designed to answer those questions — providing a breakdown of trust that product teams, UX designers, and business analysts can use to make informed design and rollout decisions for AI tools.</p>
+
+      <!-- Figure 1: Research framework -->
+      <figure class="proj-figure" style="margin-top:2rem;">
+        <div class="proj-figure__img proj-figure__img--photo" style="max-width:75%; margin:0 auto;">
+          <img src="../project1/research_framework.png" alt="Research framework diagram showing six trust dimensions predicting Intention to Use and Continued Engagement"  />
+        </div>
+        <figcaption><strong>Figure 1.</strong> Research Framework — the six trust dimensions and how they connect to a user's intent to adopt an AI tool and their decision to keep using it over time, including one dimension that bridges the two.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Approach -->
+    <section class="proj-section" aria-labelledby="s-methodology">
+      <h2 class="proj-section__heading" id="s-methodology">Approach</h2>
+      <p>The hardest part of a 30-day daily study isn't the analysis — it's getting trustworthy data out of it. I built a Python- and R-based platform to handle collection, validation, and transformation across multiple research waves, so that incomplete responses, drift, and inconsistencies were caught and cleaned before they reached the model. That pipeline turned hundreds of thousands of raw daily data points from 300+ participants into a single analysis-ready dataset. From there I used CB-SEM to measure which of the six trust dimensions predicted initial intent to use versus long-term continued engagement — and whether any acted as a bridge between the two. A second phase then translated the model's findings into a redesigned UI prototype ("Chatty") and validated them with a controlled A/B test.</p>
+      <ul class="proj-list">
+        <li><strong>Data platform:</strong> Python + R — end-to-end collection, validation, and transformation across multiple research waves</li>
+        <li><strong>Scale:</strong> 300+ subjects over 30 days → hundreds of thousands of raw data points cleaned into one analysis-ready dataset</li>
+        <li><strong>Statistical method:</strong> Covariance-Based SEM across latent constructs — factor analysis, path modeling, mediation testing, multi-group comparison</li>
+        <li><strong>Validation:</strong> Structured A/B test (redesigned UI vs. control), significance tested with Welch's t-test</li>
+        <li><strong>Supporting qualitative work:</strong> Template Thematic Analysis of participant interviews to inform design decisions</li>
+      </ul>
+
+      <!-- Methodology flowchart -->
+      <figure class="proj-figure" style="margin-top:2rem;">
+        <div class="proj-figure__img proj-figure__img--photo">
+          <img src="../project1/methodology_flow.png" alt="Research methodology flowchart across four stages"  />
+        </div>
+        <figcaption>
+          <strong>Figure 2.</strong> Research Methodology Flowchart — five-stage process from research through Phase 1 data collection and analysis, Phase 2 UI development and experiment, to conclusions and future research.
+        </figcaption>
+      </figure>
+    </section>
+
+    <!-- Key Findings -->
+    <section class="proj-section" aria-labelledby="s-findings">
+      <h2 class="proj-section__heading" id="s-findings">Key Findings</h2>
+
+      <p>The most important result from the CB-SEM model I built: <strong>trust in "getting started" is not the same as trust in "staying."</strong> All six dimensions drove initial willingness to use LLMs — but only four (Emotional, Dispositional, History-Based, Institutional) directly drove whether users kept coming back. Cognitive Trust (confidence in accuracy) and Situational Trust mattered for adoption but had no direct path to sustained engagement on their own.</p>
+
+      <!-- Figure 3: SEM path diagram -->
+      <figure class="proj-figure" style="margin-top:1.75rem;">
+        <div class="proj-figure__img proj-figure__img--photo">
+          <img src="../project1/sem_path_diagram.png" alt="SEM path diagram showing standardized coefficients from six trust dimensions to Intention to Use and Continued Engagement"  />
+        </div>
+        <figcaption><strong>Figure 3.</strong> SEM Path Diagram — standardized path coefficients (β) from each trust dimension to Intention to Use and Continued Engagement. Solid lines are statistically supported (p &lt; .05); dashed lines are not. Cognitive and Situational Trust show no significant direct path to Continued Engagement.</figcaption>
+      </figure>
+
+      <p style="margin-top:1.75rem;">One additional finding stood out: a user's general openness to technology (Dispositional Trust) shaped long-term engagement partly by first strengthening intent — meaning onboarding and first impressions have an outsized, compounding downstream effect. Users who arrive skeptical but have a good first experience are more likely to stay. Emotional Trust was the only dimension sensitive to <em>how</em> people interact — mobile users formed or lost emotional connection differently than desktop users, a factor product teams rarely account for.</p>
+
+      <p style="margin-top:1rem;">Phase 2 then tested whether these trust types could be deliberately targeted through design via A/B testing. The answer was yes: the redesigned interface outperformed the control group on five of six trust dimensions, as well as on both intent and engagement measures.</p>
+
+      <!-- Figure 4: Phase 2 composite t-test results -->
+      <figure class="proj-figure" style="margin-top:1.75rem;">
+        <div class="proj-figure__img proj-figure__img--photo" style="max-width:86.25%; margin:0 auto;">
+          <img src="../project1/results_table.png" alt="Composite analysis t-test results table comparing experimental and control groups across trust dimensions"  />
+        </div>
+        <figcaption><strong>Figure 4.</strong> Phase 2 Composite Analysis Results — Welch's t-test comparing experimental (redesigned UI) vs. control group scores across all trust dimensions and behavioral outcomes. All but Dispositional Trust showed statistically significant improvement in the experimental group.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Recommendations -->
+    <section class="proj-section" aria-labelledby="s-recommendations">
+      <h2 class="proj-section__heading" id="s-recommendations">Recommendations</h2>
+      <p>After translating the statistical findings into specific, testable product decisions and validating through A/B testing, each trust dimension maps to a concrete design move:</p>
+      <ul class="proj-list">
+        <li><strong>Cognitive Trust:</strong> Add source citations, fact-check indicators, and task-specific modes — users who can verify outputs are more willing to try the tool.</li>
+        <li><strong>Emotional Trust:</strong> Invest in personalization and tone controls, especially on mobile, where emotional connection behaves differently than on desktop.</li>
+        <li><strong>Situational Trust:</strong> Show real-time confidence levels and clearly state what the tool can and can't do for each task type — users calibrate trust moment-to-moment.</li>
+        <li><strong>History-Based Trust:</strong> Surface conversation history, interaction summaries, and progress indicators — seeing a reliable track record compounds trust over time.</li>
+        <li><strong>Institutional Trust:</strong> Make privacy policies and data practices accessible in context, not buried in settings — visible safeguards reduce the cautious withholding of information that limits engagement.</li>
+        <li><strong>Dispositional Trust:</strong> Prioritize transparent, guided onboarding — users who arrive skeptical can be converted early, and that early conversion has a lasting effect on long-term use.</li>
+      </ul>
+
+      <!-- Figure 5: Chatty prototype -->
+      <figure class="proj-figure" style="margin-top:2rem;">
+        <div class="proj-figure__img proj-figure__img--photo">
+          <img src="../project1/chatty_prototype.png" alt="Chatty LLM interface prototype screens"  />
+        </div>
+        <figcaption><strong>Figure 5.</strong> Chatty — the validated UI prototype implementing the recommendations above. Design domains visible here include privacy and information display features.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Authors -->
+    <section class="proj-section" aria-labelledby="s-authors">
+      <h2 class="proj-section__heading" id="s-authors">Authors</h2>
+      <figure class="proj-figure">
+        <div class="proj-figure__img proj-figure__img--photo">
+          <img src="../project1/authors.jpg" alt="From left to right: Teresa Rodil, Michael Dela Merced, Dr. Ezekiel Bernardo (Advisor), Bryan Chin, Frances Siy" />
+        </div>
+        <figcaption>From left to right: Teresa Rodil, Michael Dela Merced, Dr. Ezekiel Bernardo (Advisor), Bryan Chin, Frances Siy.</figcaption>
+      </figure>
+    </section>
+
+    <!-- Links -->
+    <section class="proj-section" aria-labelledby="s-links">
+      <h2 class="proj-section__heading" id="s-links">Links &amp; References</h2>
+      <ul class="proj-list">
+        <li><a href="../project1/Abstract.pdf" class="proj-link" target="_blank" rel="noopener">Abstract (PDF)</a></li>
+        <li><a href="../project1/References.pdf" class="proj-link" target="_blank" rel="noopener">References (PDF)</a></li>
+        <li><span class="proj-link" style="opacity:.5; cursor:default;">GitHub Repository (Coming Soon)</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <!-- ── Footer ── -->
+  <footer class="footer" role="contentinfo">
+    <div class="footer__links">
+      <a href="https://www.linkedin.com/in/michael-delamerced/" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/mdelamerced-1" target="_blank" rel="noopener">GitHub</a>
+      <a href="mailto:michael.delamerced1@gmail.com">michael.delamerced1@gmail.com</a>
+    </div>
+    <p>&copy; 2026 Michael Dela Merced. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
