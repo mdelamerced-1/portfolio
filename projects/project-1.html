@@ -47,55 +47,34 @@
     <!-- Overview -->
     <section class="proj-section" aria-labelledby="s-abstract">
       <h2 class="proj-section__heading" id="s-abstract">Overview</h2>
-      <p>People use AI tools like ChatGPT, Claude, and Gemini even when they don't fully trust them, and most research can't explain that contradiction. This study asked a sharper question: <em>which specific types of trust drive whether someone starts using an AI tool, and whether they keep using it?</em> To answer it, I turned a <strong>30-day longitudinal study of 300+ participants</strong> into an analysis-ready dataset, then used structural equation modeling to isolate six trust dimensions and measure each one's effect on behavior. A second phase translated those findings into UI changes and validated them with a controlled A/B test.</p>
-    </section>
-
-    <!-- My Role -->
-    <section class="proj-section" aria-labelledby="s-role">
-      <h2 class="proj-section__heading" id="s-role">My Role</h2>
-      <p>This was a four-person undergraduate thesis. I led data and statistics, owning the analytical pipeline end to end, from raw data collection to the modeling behind the study's core findings.</p>
+      <p>People keep using AI tools they don't fully trust. Our undergraduate thesis broke "trust" into six measurable dimensions to find which ones drive people to adopt an AI tool, and which keep them coming back.</p>
       <ul class="proj-list">
-        <li><strong>Data pipeline &amp; analysis:</strong> Built a Python and R pipeline that collected, validated, and transformed data for 300+ subjects across multiple research waves, turning hundreds of thousands of raw data points into a clean, analysis-ready dataset.</li>
-        <li><strong>Statistical modeling:</strong> Applied Covariance-Based Structural Equation Modeling (CB-SEM) to quantify what drives AI adoption across six latent trust constructs.</li>
-        <li><strong>From analysis to product:</strong> Translated the findings into product design recommendations and validated them with structured A/B testing.</li>
+        <li>Built a Python (pandas) pipeline that cleaned, merged, and validated 30 daily survey waves from 300+ participants into a single analysis-ready dataset</li>
+        <li>Modeled six trust dimensions with Covariance-Based SEM in R (lavaan): factor analysis, path modeling, mediation, and multi-group comparison</li>
+        <li>Validated UI design changes with a controlled A/B test, checked for significance with Welch's t-test</li>
+        <li>Built the study's data visualizations, from exploratory analysis to final results, in ggplot2 (R) and matplotlib (Python)</li>
+        <li>My role: data and statistics lead on a four-person team, owning the pipeline and modeling end to end</li>
       </ul>
     </section>
 
-    <!-- The Problem -->
-    <section class="proj-section" aria-labelledby="s-problem">
-      <h2 class="proj-section__heading" id="s-problem">The Problem</h2>
-      <p>Organizations investing in AI tools, from customer-facing chatbots to internal productivity assistants, hit the same wall: users are skeptical, adoption is uneven, and engagement often drops off. "Users don't trust AI" is too vague to act on. <em>Which kind</em> of trust is missing? Does building trust early guarantee long-term use? Can a product team actually influence trust through design?</p>
-      <p style="margin-top:1rem;">This study breaks trust down into dimensions that product teams, UX designers, and business analysts can use to make better design and rollout decisions for AI tools.</p>
+    <!-- Framework & Method -->
+    <section class="proj-section" aria-labelledby="s-method">
+      <h2 class="proj-section__heading" id="s-method">Framework &amp; Method</h2>
 
       <!-- Figure 1: Research framework -->
-      <figure class="proj-figure" style="margin-top:2rem;">
+      <figure class="proj-figure">
         <div class="proj-figure__img proj-figure__img--photo" style="max-width:75%; margin:0 auto;">
           <img src="../project1/research_framework.png" alt="Research framework diagram showing six trust dimensions predicting Intention to Use and Continued Engagement"  />
         </div>
-        <figcaption><strong>Figure 1.</strong> Research Framework: the six trust dimensions and how they connect to a user's intent to adopt an AI tool and their decision to keep using it, including one dimension that bridges the two.</figcaption>
+        <figcaption><strong>Figure 1.</strong> Research framework: the six trust dimensions and how each connects to a user's intent to adopt an AI tool and their decision to keep using it.</figcaption>
       </figure>
-    </section>
-
-    <!-- Approach -->
-    <section class="proj-section" aria-labelledby="s-methodology">
-      <h2 class="proj-section__heading" id="s-methodology">Approach</h2>
-      <p>The hardest part of a 30-day daily study isn't the analysis, it's getting trustworthy data out of it. I built a Python and R platform to collect, validate, and transform responses across multiple waves, catching incomplete responses, drift, and inconsistencies before they reached the model. That turned hundreds of thousands of raw data points from 300+ participants into one analysis-ready dataset. I then used CB-SEM to measure which trust dimensions predicted initial intent versus long-term engagement, and whether any bridged the two. A second phase translated the results into a redesigned UI prototype ("Chatty") and tested it with a controlled A/B experiment.</p>
-      <ul class="proj-list">
-        <li><strong>Data platform:</strong> Python and R for end-to-end collection, validation, and transformation across multiple research waves</li>
-        <li><strong>Scale:</strong> 300+ subjects over 30 days, hundreds of thousands of raw data points cleaned into one dataset</li>
-        <li><strong>Statistical method:</strong> Covariance-Based SEM across latent constructs (factor analysis, path modeling, mediation testing, multi-group comparison)</li>
-        <li><strong>Validation:</strong> Structured A/B test (redesigned UI vs. control), significance tested with Welch's t-test</li>
-        <li><strong>Supporting qualitative work:</strong> Template Thematic Analysis of participant interviews</li>
-      </ul>
 
       <!-- Methodology flowchart -->
       <figure class="proj-figure" style="margin-top:2rem;">
         <div class="proj-figure__img proj-figure__img--photo">
           <img src="../project1/methodology_flow.png" alt="Research methodology flowchart across four stages"  />
         </div>
-        <figcaption>
-          <strong>Figure 2.</strong> Research Methodology Flowchart: a five-stage process from research through Phase 1 data collection and analysis, Phase 2 UI development and experiment, to conclusions and future research.
-        </figcaption>
+        <figcaption><strong>Figure 2.</strong> Methodology: a five-stage, two-phase process, from data collection and SEM analysis to UI redesign, A/B testing, and conclusions.</figcaption>
       </figure>
     </section>
 
@@ -103,7 +82,13 @@
     <section class="proj-section" aria-labelledby="s-findings">
       <h2 class="proj-section__heading" id="s-findings">Key Findings</h2>
 
-      <p>The headline result from the CB-SEM model: <strong>trust in "getting started" is not the same as trust in "staying."</strong> All six dimensions drove initial willingness to use LLMs, but only four (Emotional, Dispositional, History-Based, Institutional) drove whether users kept coming back. Cognitive Trust (confidence in accuracy) and Situational Trust mattered for adoption but had no direct path to sustained engagement.</p>
+      <p><strong>Trust in "getting started" is not the same as trust in "staying."</strong></p>
+      <ul class="proj-list">
+        <li>All six dimensions drove initial adoption; only four (Emotional, Dispositional, History-Based, Institutional) sustained long-term use</li>
+        <li>Onboarding compounds: a user's general openness to technology fed long-term engagement by first strengthening intent</li>
+        <li>Emotional trust formed differently on mobile than on desktop, something product teams rarely account for</li>
+        <li>The redesigned UI beat the control group on five of six dimensions, plus both intent and engagement</li>
+      </ul>
 
       <!-- Figure 3: SEM path diagram -->
       <figure class="proj-figure" style="margin-top:1.75rem;">
@@ -112,10 +97,6 @@
         </div>
         <figcaption><strong>Figure 3.</strong> SEM Path Diagram: standardized path coefficients (β) from each trust dimension to Intention to Use and Continued Engagement. Solid lines are statistically supported (p &lt; .05); dashed lines are not. Cognitive and Situational Trust show no significant direct path to Continued Engagement.</figcaption>
       </figure>
-
-      <p style="margin-top:1.75rem;">One finding stood out: a user's general openness to technology (Dispositional Trust) shaped long-term engagement partly by first strengthening intent, so onboarding and first impressions have an outsized, compounding effect. Users who arrive skeptical but have a good first experience are more likely to stay. Emotional Trust was the only dimension sensitive to <em>how</em> people interact: mobile users formed or lost emotional connection differently than desktop users, something product teams rarely account for.</p>
-
-      <p style="margin-top:1rem;">Phase 2 then tested whether these trust types could be targeted through design. They could: the redesigned interface beat the control group on five of six trust dimensions, plus both intent and engagement.</p>
 
       <!-- Figure 4: Phase 2 composite t-test results -->
       <figure class="proj-figure" style="margin-top:1.75rem;">
@@ -129,14 +110,14 @@
     <!-- Recommendations -->
     <section class="proj-section" aria-labelledby="s-recommendations">
       <h2 class="proj-section__heading" id="s-recommendations">Recommendations</h2>
-      <p>Each trust dimension maps to a concrete, testable design move:</p>
+      <p>Each dimension maps to a concrete design move:</p>
       <ul class="proj-list">
-        <li><strong>Cognitive Trust:</strong> Add source citations, fact-check indicators, and task-specific modes. Users who can verify outputs are more willing to try the tool.</li>
-        <li><strong>Emotional Trust:</strong> Invest in personalization and tone controls, especially on mobile, where emotional connection behaves differently than on desktop.</li>
-        <li><strong>Situational Trust:</strong> Show real-time confidence levels and state clearly what the tool can and can't do for each task. Users calibrate trust moment to moment.</li>
-        <li><strong>History-Based Trust:</strong> Surface conversation history, interaction summaries, and progress indicators. A visible track record compounds trust over time.</li>
-        <li><strong>Institutional Trust:</strong> Make privacy policies and data practices accessible in context, not buried in settings. Visible safeguards reduce the cautious withholding of information that limits engagement.</li>
-        <li><strong>Dispositional Trust:</strong> Prioritize transparent, guided onboarding. Skeptical users can be converted early, and that early conversion lasts.</li>
+        <li><strong>Cognitive Trust:</strong> source citations, fact-check indicators, task-specific modes</li>
+        <li><strong>Emotional Trust:</strong> personalization and tone controls, especially on mobile</li>
+        <li><strong>Situational Trust:</strong> real-time confidence levels and clear, per-task limits</li>
+        <li><strong>History-Based Trust:</strong> visible conversation history, summaries, and progress indicators</li>
+        <li><strong>Institutional Trust:</strong> privacy and data practices surfaced in context, not buried in settings</li>
+        <li><strong>Dispositional Trust:</strong> transparent, guided onboarding to convert skeptics early</li>
       </ul>
 
       <!-- Figure 5: Chatty prototype -->
